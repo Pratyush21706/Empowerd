@@ -1,0 +1,230 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  background: #ffd43e;
+  overflow: hidden;
+}
+/* some Predefined shit */
+button,
+a,
+input,
+div {
+  outline: none;
+  transition: 0.5s;
+  border: none;
+}
+
+/* Various screens of the app */
+.start {
+  display: none;
+}
+
+.screen-two {
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.onboarding {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login {
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  background-attachment: fixed;
+  background: url(main.png);
+  background-position-y: 100rem;
+  background-position-x: 10vw;
+  -webkit-animation-name: in-top;
+  -webkit-animation-duration: 1s;
+  animation-name: in-top;
+  animation-duration: 1s;
+  -moz-animation-name: in-top;
+  -moz-animation-duration: 1s;
+}
+
+/* Global var classes */
+.center {
+  text-align: center;
+  font-weight: 600;
+}
+.gray {
+  background: lightgray;
+  border: none;
+  color: black;
+}
+/* .circ {
+  padding: 20vw;
+  background: #ff7138;
+  position: absolute;
+  border-top-left-radius: 300px;
+  border-bottom-right-radius: 200px;
+  margin-top: 50vh;
+  margin-left: -8vw;
+} */
+/* Onboarding Page starts Here */
+.logo {
+  width: 80vw;
+  margin-left: 10vw;
+  border-radius: 1em;
+  padding: 0.2em;
+  font-size: 2rem;
+  position: fixed;
+  margin-top: 5vh;
+  color: white;
+  background: rgb(255, 199, 56, 0.3);
+}
+
+.obImage {
+  width: 90vw;
+  height: 60vh;
+  background: #f3f3f3;
+  border-radius: 2rem;
+}
+.obImage::-webkit-scrollbar {
+  display: none;
+}
+.ob1 {
+  width: 100vw;
+}
+
+.mini {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  margin-top: 15vh;
+  margin-left: -45vw;
+  max-width: 500px;
+}
+
+.button {
+  width: 70%;
+  padding: 0.8rem;
+  border: 0px;
+  font-size: 1rem;
+  margin-left: 14%;
+  border-radius: 0.3rem;
+}
+
+.button:nth-child(1) {
+  margin-top: 3vh;
+}
+
+.button:nth-child(2) {
+  margin-top: 2vh;
+}
+
+.filled {
+  background: #ff6d36;
+  color: white;
+}
+
+.empty {
+  background: none;
+  border: 2px solid rgb(255, 253, 253);
+}
+
+/* Login Page Starts here */
+.top-image img {
+  width: 100vw;
+}
+
+.input {
+  padding: 0.4rem;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  width: 80vw;
+  border-bottom: 2px solid rgba(177, 176, 176, 0.301);
+}
+#fas {
+  margin-top: 7vh;
+}
+
+.input:focus {
+  border-bottom: 2px solid #ff7138;
+}
+.login h1 {
+  color: white;
+  margin: 1em;
+  font-size: 1.6em;
+  margin-top: 8vh;
+}
+label {
+  font-size: 0.9em;
+  position: absolute;
+  color: #800080;
+  margin-left: 2vw;
+  transition: 1s;
+  opacity: 0;
+}
+
+.label-two {
+  /* color: red; */
+  position: absolute;
+  margin-left: -82vw;
+  margin-top: 9vh;
+}
+.content {
+  margin-left: 7vw;
+  margin-top: 8vh;
+}
+
+.blue-button {
+  margin-left: 6vw;
+  margin-top: 5vh;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  width: 70vw;
+  border-radius: 10px;
+  background: red;
+}
+/* Home Page Part Starts Here */
+.circle-profile-container {
+  background: red;
+  border-radius: 86px;
+  width: 12vw;
+  height: 12vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 6vw;
+}
+
+#user-name {
+  color: #0f0f2e;
+  margin: 6vw;
+  margin-top: 5vh;
+}
+
+.trending-topics {
+  width: 100vw;
+  height: 30vh;
+  background: whitesmoke;
+}
+/* Animation Part starts  */
+@keyframes in-top {
+  from {
+    /* height: 0px; */
+    /* opacity: 0; */
+    /* margin-left: 0px; */
+    /* margin-top: 100vh; */
+    background-position-y: 0rem;
+  }
+  to {
+    /* height: 100vh; */
+    /* opacity: 1; */
+    /* margin-left: 0%; */
+    /* margin-top: 0vh; */
+    background-position-y: 100rem;
+  }
+}

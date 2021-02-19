@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script src="js/p5.js"></script>
+    <script src="js/p5.dom.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="web-fonts-with-css/css/flaticon.css">
+    <!-- Google fonts Here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Why do meta still exist -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Breadcrum Area -->
+    <div class="breadcrum">
+        <p id="user-date"></p>
+        <h2 id="user-name">Hello, Sittu!</h2>
+    </div>
+
+    <!-- Category Area -->
+    <div class="category-container no-scrollbar">
+        <div class="category">All Topics</div>
+        <div class="category">Technology</div>
+        <div class="category">Design</div>
+        <div class="category">Photography</div>
+        <div class="category">Lifestyle</div>
+    </div>
+
+    <!-- Popular Blogs area starts here -->
+    <div class="popular-container no-scrollbar">
+        <h3 class="heading">Popular</h3>
+        <div class="listing-area">
+            <div class="popular-card">
+                <img src="./img/Ui/design.webp">
+                <div class="card-info">
+                    <p class="cate">Freelancer</p>
+                    <p class='title'>The Freelancer and the Enterprenour</p>
+                </div>
+            </div>
+            <div class="popular-card">
+                <img src="./img/onboarding/ob1.webp">
+                <div class="card-info">
+                    <p>How to Teach the world Uc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Div Class Feed -->
+    <div class="feed-container">
+        <h3 clas="heading" style="margin-top: 5vh; color : rgb(48, 48, 48)">
+            Your Feed
+        </h3>
+        <div class="listing-vertical">
+
+            <div class="feed-card">
+                <div class="thumb-paarent">
+                    <img src="img/Ui/design.webp">
+                </div>
+                <div class="related-text">
+                    <p class="feed-cate">Freelancer</p>
+                    <p class="feed-title">The Freelancer and the Enterprenour</p>
+                    <p class="feed-publisher">John Doe</p>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                <div class="thumb-paarent">
+                    <img src="img/onboarding/my-great-proejct.png">
+                </div>
+                <div class="related-text">
+                    <p class="feed-cate">Freelancer</p>
+                    <p class="feed-title">The Freelancer and the Enterprenour</p>
+                    <p class="feed-publisher">John Doe</p>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                <div class="thumb-paarent">
+                    <img src="img/onboarding/ob1.webp">
+                </div>
+                <div class="related-text">
+                    <p class="feed-cate">Freelancer</p>
+                    <p class="feed-title">The Freelancer and the Enterprenour who fucked his mom proudly</p>
+                    <p class="feed-publisher">John Doe</p>
+                </div>
+            </div>
+
+            <div class="feed-card">
+                <div class="thumb-paarent">
+                    <img src="img/Ui/elements.webp">
+                </div>
+                <div class="related-text">
+                    <p class="feed-cate">UI DESIGN</p>
+                    <p class="feed-title">The Design elements of an UI/UX</p>
+                    <p class="feed-publisher">John Doe</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Navigation Part starts here -->
+    <div class="nav no-scrollbar">
+        <a class="flaticon-home-1"></a>
+        <a class="flaticon-compass"></a>
+        <a class="flaticon-writing"></a>
+        <a class="flaticon-user"></a>
+    </div>
+</body>
+
+</html>
